@@ -1,0 +1,1 @@
+# toysi-shop-template
