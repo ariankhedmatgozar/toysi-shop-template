@@ -96,27 +96,40 @@ a {
 }
 
 .btn {
-  height: 48px;
-  width: 48px;
-  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 4px 12px;
+  font-size: 16px;
+  height: auto;
+  width: auto;
+  border-radius: 15px;
   border: none;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: hsl(0, 0%, 85%);
-  transition: background-color 0.15s ease-in-out;
+  background-color: hsl(0, 0%, 88%);
+  transition: background-color 0.15s ease-in-out, color 0.15s ease-in-out;
 }
 
 .btn:hover {
-  background-color: hsl(0, 0%, 80%);
+  background-color: hsl(0, 0%, 85%);
+  color: hsl(0, 100%, 60%);
+}
+
+.btn:hover .shopping-cart-logo,
+.btn:hover .wishlist-logo {
+  stroke: hsl(0, 100%, 60%);
 }
 
 .shopping-cart-logo,
 .wishlist-logo {
-  height: 24px;
-  width: 24px;
+  height: 20px;
+  width: 20px;
   stroke: hsl(0, 0%, 10%);
+  transition: stroke 0.15s ease-in-out;
 }
 
 .instagram-logo {
